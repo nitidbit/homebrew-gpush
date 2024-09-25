@@ -1,7 +1,8 @@
 # homebrew-gpush
 
-To install formulae
-`brew install nitidbit/homebrew-gpush/formula`
+To install
+`brew tap nitidbit/gpush`
+`brew install gpush`
 
-Updating
+To update
 `brew update`
