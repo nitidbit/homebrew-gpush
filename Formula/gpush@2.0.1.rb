@@ -1,8 +1,8 @@
-class Gpush < Formula
+class GpushAT201 < Formula
   desc "Run linters and tests locally before pushing to a remote git repository"
   homepage "https://github.com/nitidbit/gpush"
-  url "https://github.com/nitidbit/gpush/archive/refs/tags/v2.0.2.tar.gz"
-  sha256 "a40fa948df347b1ffb842fdb90aaeed480d7a6145b63c21838261181c367c3c8"
+  url "https://github.com/nitidbit/gpush/archive/refs/tags/2.0.1.tar.gz"
+  sha256 "6a484ce64141a57496ddffc56321942be72d4ee61f8c7dd0b0b9b7852df4199f"
   license "MIT"
 
   EXECUTABLES = [
