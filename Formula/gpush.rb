@@ -5,6 +5,8 @@ class Gpush < Formula
   sha256 "4011c94356b52eb6515841a0edbb2810ccc7499c5aae82e8ed85c8b44d3f14e8"
   license "MIT"
 
+  depends_on "ruby"
+
   EXECUTABLES = [
     "gpush_changed_files.rb",
     "gpush_get_specs.rb",
