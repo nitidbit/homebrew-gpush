@@ -10,7 +10,6 @@ class Gpush < Formula
   EXECUTABLES = [
     "gpush_changed_files.rb",
     "gpush_get_specs.rb",
-    "gpush_run_if_any.rb",
     "gpush.rb",
   ].freeze
 
