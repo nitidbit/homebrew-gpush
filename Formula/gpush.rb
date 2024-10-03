@@ -1,11 +1,13 @@
 class Gpush < Formula
+  MINIMUM_RUBY_VERSION = "3.1".freeze
+
   desc "Run linters and tests locally before pushing to a remote git repository"
   homepage "https://github.com/nitidbit/gpush"
   url "https://github.com/nitidbit/gpush/archive/refs/tags/v2.2.1.tar.gz"
   sha256 "8a11cd3b4482a868cfadcc9a9cb830e29797b79462bebc114352747e6c41fcd9"
   license "MIT"
 
-  depends_on "ruby" => ">= 3.1"
+  depends_on "ruby" => ">= #{MINIMUM_RUBY_VERSION}"
 
   EXECUTABLES = [
     "gpush_changed_files.rb",
@@ -41,10 +43,12 @@ class Gpush < Formula
 
       # Create wrapper scripts for each command file
       bin_name = File.basename(file, ".rb") # Get the name without the .rb extension
-      (bin/bin_name).write <<~EOS
+      (bin/bin_name).write <<~BASH_SCRIPT
         #!/bin/bash
-        exec ruby "#{libexec}/#{file}" "$@"
-      EOS
+
+        # Use the Ruby installed by Homebrew
+        "#{Formula["ruby"].opt_bin}/ruby" "#{libexec}/#{file}" "$@"
+      BASH_SCRIPT
       chmod "+x", bin/bin_name
     end
 
