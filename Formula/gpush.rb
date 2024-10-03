@@ -2,10 +2,10 @@ class Gpush < Formula
   desc "Run linters and tests locally before pushing to a remote git repository"
   homepage "https://github.com/nitidbit/gpush"
   url "https://github.com/nitidbit/gpush/archive/refs/tags/v2.1.0.tar.gz"
-  sha256 "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+  sha256 "3a9a1097939d55d243cb5dd95e45158fa4dbc6d064e6a25a6025b9cefcf9531e"
   license "MIT"
 
-  depends_on "ruby", ">= 3.1"
+  depends_on "ruby" => ">= 3.1"
 
   EXECUTABLES = [
     "gpush_changed_files.rb",
