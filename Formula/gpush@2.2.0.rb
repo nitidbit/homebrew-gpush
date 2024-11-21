@@ -4,6 +4,7 @@ class GpushAT220 < Formula
   url "https://github.com/nitidbit/gpush/archive/refs/tags/v2.2.0.tar.gz"
   sha256 "8c2e40ff18379465d6b3fc8ad65632b5fe88c591cc2b4036837eeee11d92ef6e"
   license "MIT"
+  keg_only :versioned_formula
 
   depends_on "ruby" => ">= 3.1"
 

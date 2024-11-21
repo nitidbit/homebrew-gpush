@@ -4,6 +4,7 @@ class GpushAT201 < Formula
   url "https://github.com/nitidbit/gpush/archive/refs/tags/2.0.1.tar.gz"
   sha256 "6a484ce64141a57496ddffc56321942be72d4ee61f8c7dd0b0b9b7852df4199f"
   license "MIT"
+  keg_only :versioned_formula
 
   EXECUTABLES = [
     "gpush_changed_files.rb",

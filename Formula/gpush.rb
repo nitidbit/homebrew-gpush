@@ -58,5 +58,6 @@ class Gpush < Formula
 
   test do
     system bin/"gpush", "--version"
+    assert_match "Usage", shell_output("#{bin}/gpush --help")
   end
 end
