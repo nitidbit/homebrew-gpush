@@ -21,7 +21,7 @@ class Gpush < Formula
 
   def install
     # Logging the start of the installation process
-    ohai "Starting installation of gpush"
+    ohai "Starting installation of gpush version #{version}"
 
     # Ensure libexec directory exists
     libexec.mkpath
@@ -47,7 +47,7 @@ class Gpush < Formula
         #!/bin/bash
 
         # Use the Ruby installed by Homebrew
-        GPUSH_VERSION=#{version} #{Formula["ruby"].opt_bin}/ruby" "#{libexec}/#{file}" "$@"
+        GPUSH_VERSION="#{version}" #{Formula["ruby"].opt_bin}/ruby "#{libexec}/#{file}" "$@"
       BASH_SCRIPT
       chmod "+x", bin/bin_name
     end
