@@ -1,4 +1,4 @@
-class Gpush < Formula
+class GpushAT230 < Formula
   MINIMUM_RUBY_VERSION = "3.1".freeze
 
   desc "Run linters and tests locally before pushing to a remote git repository"

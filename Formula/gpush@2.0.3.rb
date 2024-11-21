@@ -1,4 +1,4 @@
-class Gpush < Formula
+class GpushAT203 < Formula
   desc "Run linters and tests locally before pushing to a remote git repository"
   homepage "https://github.com/nitidbit/gpush"
   url "https://github.com/nitidbit/gpush/archive/refs/tags/v2.0.3.tar.gz"
