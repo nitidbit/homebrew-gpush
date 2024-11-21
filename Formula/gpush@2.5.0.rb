@@ -1,10 +1,10 @@
-class Gpush < Formula
+class GpushAT250 < Formula
   MINIMUM_RUBY_VERSION = "3.1".freeze
 
   desc "Run linters and tests locally before pushing to a remote git repository"
   homepage "https://github.com/nitidbit/gpush"
-  url "https://github.com/nitidbit/gpush/archive/refs/tags/v2.5.1.tar.gz"
-  sha256 "6905e7c2ed50607cb6836aec63761be7d48589405359d6981d20826ca77bc9d0"
+  url "https://github.com/nitidbit/gpush/archive/refs/tags/v2.5.0.tar.gz"
+  sha256 "49fc3d7c40a84a3fd367187f445161453a32d884302fe3062c6e8c5a1c0d4a7a"
   license "MIT"
 
   depends_on "ruby" => ">= #{MINIMUM_RUBY_VERSION}"
@@ -47,7 +47,7 @@ class Gpush < Formula
         #!/bin/bash
 
         # Use the Ruby installed by Homebrew
-        GPUSH_VERSION=#{version} #{Formula["ruby"].opt_bin}/ruby" "#{libexec}/#{file}" "$@"
+        #{Formula["ruby"].opt_bin}/ruby" "#{libexec}/#{file}" "$@"
       BASH_SCRIPT
       chmod "+x", bin/bin_name
     end
