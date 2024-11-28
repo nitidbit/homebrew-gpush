@@ -8,6 +8,7 @@ class Gpush < Formula
   license 'MIT'
 
   depends_on 'ruby' => ">= #{MINIMUM_RUBY_VERSION}"
+  depends_on 'terminal-notifier' => :recommended
 
   EXECUTABLES = [
     'gpush_changed_files.rb',
