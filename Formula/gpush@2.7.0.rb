@@ -1,10 +1,10 @@
-class Gpush < Formula
+class GpushAT270 < Formula
   MINIMUM_RUBY_VERSION = '3.1'.freeze
 
   desc 'Run linters and tests locally before pushing to a remote git repository'
   homepage 'https://github.com/nitidbit/gpush'
-  url "https://github.com/nitidbit/gpush/archive/refs/tags/v2.7.1.tar.gz"
-  sha256 "ac01f6d73e26cf4ff3198fd19cf19bd9b99919e247c23b78b7eb9390016bfc09"
+  url "https://github.com/nitidbit/gpush/archive/refs/tags/v2.7.0.tar.gz"
+  sha256 "1a0c35d0d4e5058ece0c96bc73107aae88db86a8fe8da3da0eedb14d9599c0aa"
   license 'MIT'
 
   depends_on 'ruby' => ">= #{MINIMUM_RUBY_VERSION}"
